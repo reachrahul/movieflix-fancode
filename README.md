@@ -8,7 +8,7 @@ use version 18 if available otherwise install it: $nvm use v18.0.2
 
 #Commands to run
 $npm install
-$react-native run-android
+$npx react-native run-android
 
 #Functionality covered
 **Major requirements**
