@@ -70,18 +70,30 @@ export default function MyApp() {
   }, [pagination]);
 
   const renderSingleYearList = (item: any) => {
-    // console.log('item', item.item);
     return (
       <View style={{alignSelf: 'center'}}>
-        <Text
-          style={{
-            margin: 6,
-            fontSize: 20,
-            fontWeight: '600',
-            fontFamily: 'sans-serif',
-          }}>
-          {item.item.year}
-        </Text>
+        {item.item.movies.length ? (
+          <Text
+            style={{
+              margin: 6,
+              fontSize: 20,
+              fontWeight: '600',
+              fontFamily: 'sans-serif',
+            }}>
+            {item.item.year}
+          </Text>
+        ) : (
+          <Text
+            style={{
+              margin: 6,
+              fontSize: 20,
+              fontWeight: '600',
+              fontFamily: 'sans-serif',
+            }}>
+            {item.item.year}: 0 movies
+          </Text>
+        )}
+
         <View
           style={{
             width: '100%',

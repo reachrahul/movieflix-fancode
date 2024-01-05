@@ -11,8 +11,6 @@ import {
 import {fetchGenreList} from '../api/apiCall';
 
 export function Header({getSelectedId}) {
-  //   console.log('render');
-
   useEffect(() => {
     const getGenre = async () => {
       let response = await fetchGenreList();

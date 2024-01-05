@@ -32,7 +32,7 @@ export const renderMovieItem = (item: any, width: number) => {
             {item.popularity}
           </Text>
           <Text
-            style={{backgroundColor: 'rgba(12,32,4,0.4)'}}
+            style={{backgroundColor: 'rgba(12,32,4,0.4)', color: '#F0F8FF'}}
             numberOfLines={2}>
             {item.overview}
           </Text>
