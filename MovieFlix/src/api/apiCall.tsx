@@ -5,7 +5,6 @@ export const fetchMovies = async (pagination: object) => {
   try {
     const response = await fetch(url, options);
     const response_1 = await response.json();
-    console.log('api', response_1);
     return response_1;
   } catch (err) {
     return console.error(err);
