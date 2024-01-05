@@ -6,9 +6,14 @@ react-native and node version 18.0.0
 check node version list: $nvm ls 
 use version 18 if available otherwise install it: $nvm use v18.0.2
 
+#run pod install
+if facing any issue with ios build follow this to fix: https://stackoverflow.com/a/65921046
+
 #Commands to run
 $npm install
 $npx react-native run-android
+
+
 
 #Functionality covered
 **Major requirements**
